@@ -35,9 +35,10 @@ section {
     color: white;
     width: 200px;
     border-radius: 10px;
-    margin-left: 25px;
+    /*margin-left: 25px;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 15px;*/
+    margin: 10px auto;
     z-index: 1;
 }
 
@@ -57,14 +58,14 @@ section {
 .product {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
-    margin-left: 25px;
-    margin-bottom: 10px;
+    /*margin-left: 25px;
+    margin-bottom: 10px;*/
+    margin: 0 10px 0 30px;
 }
 
 .description {
     color: hsl(215, 51%, 70%);
-    margin-left: 25px;
-    margin-bottom: 10px;
+    margin: 10px 10px 0 30px;
     font-weight: 300;
     font-size: 0.65em;
     line-height: 1.5;
