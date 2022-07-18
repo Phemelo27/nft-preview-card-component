@@ -31,12 +31,15 @@ section {
     margin: 0 auto;
 }
 
+.img-container {
+    margin: 15px auto;
+    background-color: hsl(178, 100%, 50%);
+}
+
 .cube-img {
     color: white;
     width: 200px;
     border-radius: 10px;
-    margin: 15px auto;
-    z-index: 1;
 }
 
 /*.s {
