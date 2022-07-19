@@ -37,12 +37,11 @@ section {
     width: 200px;
     border-radius: 10px;
     margin: 10px 25px;
-    background-image: url("images/image-equilibrium.jpg");
 }
 .view {
     position: relative;
     left: 75px;
-    top: 75px;
+    top: 80px;
 }
 
 .product {
