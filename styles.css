@@ -4,45 +4,56 @@
     box-sizing: border-box;
 }
 
+
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     background-color: hsl(217, 54%, 11%);
 }
 
-section {
+.card {
     background-color: hsl(216, 50%, 16%);
     width: 250px;
     margin: 40px auto;
     border-radius: 15px;
-    box-shadow: 5px 20px 25px black;
+    box-shadow: 5px 10px 15px black;
+    padding: 15px 0;
 }
+/* -- Image Section -- */
 
 .img-container {
     position: relative;
 }
-.img-hover {
-    width: 200px;
-    height: 200px;
-    background-color: hsl(178, 100%, 50%);
-    opacity: 0.25;
+.hover-state {
     position: absolute;
     left: 25px;
     top: 10px;
-    border-radius: 10px;
-}
-.cube-img {
-    color: white;
     width: 200px;
+    height: 200px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    /*visibility: hidden;*/
+    /*z-index: -1;*/
+}
+
+.view {
+    /*position: absolute;
+    left: 100px;
+    top: 90px;*/
+    margin: 80px 75px;
+}
+
+.cube-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     margin: 10px 25px;
 }
-.view {
-    position: relative;
-    left: 75px;
-    top: 80px;
-}
+
+
+/* --- Text Section -- */
 
 .product {
     color: hsl(0, 0%, 100%);
@@ -58,6 +69,11 @@ section {
     line-height: 1.5;
 }
 
+.info {
+    display: flex;
+    margin: 5px 10px 0 25px;
+}
+
 .coin {
     color: hsl(178, 100%, 50%);
     font-weight: 400;
@@ -69,29 +85,6 @@ section {
     color: hsl(215, 51%, 70%);
     font-size: 0.65em;
     padding-left: 2.5px;
-}
-
-.hr {
-    width: 200px;
-    height: 0.5px;
-    background-color: hsl(215, 32%, 27%);
-    margin: 0 auto;
-}
-
-.designer-credit {
-    color: hsl(215, 51%, 70%);
-    font-size: 10px;
-}
-
-.designer-credit span {
-    color: hsl(0, 0%, 100%);
-    font-weight: 300;
-    font-size: 12px;
-}
-
-.pnt {
-    display: flex;
-    margin: 5px 10px 0 25px;
 }
 
 .price {
@@ -106,47 +99,78 @@ section {
     display: flex;
     align-items: center;
 }
-
-.avatar {
-    display: flex;
-    align-items: center;
-    margin-left: 26.25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin: 10px 0 10px 26.25px;
+.hr {
+    width: 200px;
+    height: 0.5px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 0 auto;
 }
 
-.avatar img {
+/* --- NFT Creator --- */
+.creator-credit {
+    color: hsl(215, 51%, 70%);
+    font-size: 10px;
+}
+
+.creator-credit span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 26.25px;
+}
+
+.creator img {
     width: 30px;
     border: 1px solid white;
     border-radius: 30px;
 }
 
-.avatar .designer-credit {
-    font-weight: 300;
-    font-size: 12px;
+.creator .creator-credit {
     padding-left: 15px;
+    margin-bottom: 10px;
 }
 
+
+/* --- Attribution Section --- */
 .attribution {
     color: white;
     font-size: 11px;
     text-align: center;
+    position: relative;
+    top: 50px;
 }
 
 .attribution a {
     color: hsl(215, 51%, 70%);
+    text-decoration-thickness: 2px;
 }
 
+
 /*--Hover States--*/
+
+/*.hover-state:active {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    visibility: hidden;
+}*/
 .product:hover {
     color: hsl(178, 100%, 50%);
 }
 
-.designer-credit span:hover {
+.creator-credit span:hover {
     color: hsl(178, 100%, 50%);
 }
 
-.cube-img:hover {
-    z-index: 0;
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
 }
