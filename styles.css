@@ -13,6 +13,7 @@ body {
 }
 
 .card {
+    position: relative;
     background-color: hsl(216, 50%, 16%);
     width: 250px;
     margin: 40px auto;
@@ -23,34 +24,40 @@ body {
 /* -- Image Section -- */
 
 .img-container {
-    position: relative;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
 }
+
 .hover-state {
     position: absolute;
     left: 25px;
     top: 10px;
+    background-size: 200px;
     width: 200px;
     height: 200px;
-    background-color: hsla(178, 100%, 50%, 0.5);
+    background-image: url(images/image-equilibrium.jpg);
     border-radius: 10px;
-    /*visibility: hidden;*/
-    /*z-index: -1;*/
+    z-index: 2;
 }
 
-.view {
-    /*position: absolute;
-    left: 100px;
-    top: 90px;*/
-    margin: 80px 75px;
+.view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
-
-.cube-img {
-    position: relative;
+/*.cube-img {
     width: 200px;
     height: 200px;
     border-radius: 10px;
     margin: 10px 25px;
-}
+}*/
 
 
 /* --- Text Section -- */
@@ -116,6 +123,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-weight: 300;
     font-size: 12px;
+    padding-left: 2px;
 }
 
 .creator {
@@ -135,7 +143,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* --- Attribution Section --- */
 .attribution {
     color: white;
@@ -150,19 +157,17 @@ body {
     text-decoration-thickness: 2px;
 }
 
-
 /*--Hover States--*/
-
-/*.hover-state:active {
-    position: absolute;
-    left: 25px;
-    top: 10px;
-    width: 200px;
-    height: 200px;
-    background-color: hsla(178, 100%, 50%, 0.5);
+.view-container:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.4);
     border-radius: 10px;
+    height: 100%;
     visibility: hidden;
-}*/
+}
+
 .product:hover {
     color: hsl(178, 100%, 50%);
 }
