@@ -38,10 +38,10 @@ body {
     height: 200px;
     background-image: url(images/image-equilibrium.jpg);
     border-radius: 10px;
-    z-index: 2;
+    /*z-index: -;*/
 }
 
-.view-container {
+/*.view-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 1;
-}
+}*/
 /*.cube-img {
     width: 200px;
     height: 200px;
@@ -165,7 +165,6 @@ body {
     background-color: hsla(178, 100%, 50%, 0.4);
     border-radius: 10px;
     height: 100%;
-    visibility: hidden;
 }
 
 .product:hover {
