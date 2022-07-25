@@ -14,14 +14,15 @@ body {
 
 .card {
     position: relative;
-    background-color: hsl(216, 50%, 16%);
     width: 250px;
+    background-color: hsl(216, 50%, 16%);
     margin: 40px auto;
+    padding: 15px 0;
     border-radius: 15px;
     box-shadow: 5px 10px 15px black;
-    padding: 15px 0;
 }
-/* -- Image Section -- */
+
+/* --- Image Section --- */
 
 .img-container {
     background-size: 200px;
@@ -30,42 +31,40 @@ body {
 }
 
 .hover-state {
+    /*  Layout  */
     position: absolute;
     left: 25px;
     top: 10px;
+    margin: 10px 0;
+
+    /*  Styling  */
     background-size: 200px;
     width: 200px;
     height: 200px;
-    background-image: url(images/image-equilibrium.jpg);
     border-radius: 10px;
-    /*z-index: -;*/
+    background-image: url(images/image-equilibrium.jpg);
 }
 
-/*.view-container {
+.view-container {
+    /*  Layout  */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsla(178, 100%, 50%, 0.4);
+
+    /*  Styling */
+    background-color: hsla(0, 0%, 0%, 0.1);
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-}*/
-/*.cube-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10px 25px;
-}*/
-
+    opacity: 0;
+}
 
 /* --- Text Section -- */
 
 .product {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
-    margin: 0 10px 0 30px;
+    margin: 15px 10px 0 30px;
 }
 
 .description {
@@ -79,6 +78,7 @@ body {
 .info {
     display: flex;
     margin: 5px 10px 0 25px;
+    padding-left: 5px;
 }
 
 .coin {
@@ -106,6 +106,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .hr {
     width: 200px;
     height: 0.5px;
@@ -114,9 +115,10 @@ body {
 }
 
 /* --- NFT Creator --- */
+
 .creator-credit {
     color: hsl(215, 51%, 70%);
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .creator-credit span {
@@ -144,12 +146,16 @@ body {
 }
 
 /* --- Attribution Section --- */
+
 .attribution {
+    /*  Layout  */
+    position: relative;
+    top: 50px;
+
+    /*  Styling  */
     color: white;
     font-size: 11px;
     text-align: center;
-    position: relative;
-    top: 50px;
 }
 
 .attribution a {
@@ -157,7 +163,8 @@ body {
     text-decoration-thickness: 2px;
 }
 
-/*--Hover States--*/
+/*--- Hover States ---*/
+
 .view-container:hover {
     display: flex;
     justify-content: center;
@@ -165,6 +172,7 @@ body {
     background-color: hsla(178, 100%, 50%, 0.4);
     border-radius: 10px;
     height: 100%;
+    opacity: 1;
 }
 
 .product:hover {
